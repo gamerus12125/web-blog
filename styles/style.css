@@ -1,0 +1,130 @@
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto-mono";
+  font-style: normal;
+  src: url("../fonts/roboto-mono-v13-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/roboto-mono-v13-latin_cyrillic-700.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto-mono";
+  font-style: normal;
+  src: url("../fonts/roboto-mono-v13-latin_cyrillic-regular.woff2")
+      format("woff2"),
+    url("../fonts/roboto-mono-v13-latin_cyrillic-regular.woff") format("woff");
+}
+
+body {
+  font-family: "Roboto-mono", monospace;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  width: 100vw;
+  min-height: 87px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 5px solid #0500ff;
+}
+
+.header__nav {
+  padding: 0;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  text-decoration: none;
+  margin-left: 233px;
+  margin-top: 4px;
+  margin-right: 86px;
+}
+
+.header__container {
+  width: 475px;
+  background-color: #0500ff;
+}
+
+.header__list {
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  width: 370px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 53px;
+  margin-bottom: 5px;
+  min-height: 32px;
+}
+
+.header__contact-list {
+  display: flex;
+  width: 169px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 247px;
+  margin-top: 16px;
+}
+
+.header__contact-item {
+  margin-left: 1px;
+}
+
+.header__item {
+  margin-left: 1px;
+}
+
+.header__link {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.about-me {
+  width: 956px;
+  min-height: 182px;
+  display: flex;
+  border: 5px solid #0500ff;
+  margin-top: 113px;
+  margin-left: 252px;
+}
+
+.about-me__photo {
+  border: 5px solid #0500ff;
+  margin-left: 43px;
+  margin-top: 26px;
+  height: 100%;
+}
+
+.about-me__container {
+  content: ">";
+}
+
+.posts__title {
+  font-weight: bold;
+  font-size: 32px;
+  color: #0500ff;
+  margin-left: 615px;
+  margin-top: 67px;
+}

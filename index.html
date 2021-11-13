@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>_web.blog</title>
 </head>
 
 <body>
-    <h1 class="hidden">
-        Веб блог
-    </h1>
     <header class="header">
         <nav class="header__nav">
+        <a class="header__logo" href="">
             <img class="header__image" src="img/logo.svg" alt="_web.blog">
+        </a>
+        <div class="header__container">
             <ul class="header__list">
                 <li class="header__item">
                     <a class="header__link" href="#">
@@ -37,6 +38,7 @@
                     </a>
                 </li>
             </ul>
+        </div>
             <ul class="header__contact-list">
                 <li class="header__contact-item">
                     <a class="header__contact-link" href="#">
@@ -63,31 +65,32 @@
         </nav>
     </header>
     <main class="main">
+        <h1 class="hidden">
+            Веб блог
+        </h1>
         <section class="about-me">
             <h2 class="hidden">
                 Обо мне
             </h2>
-            <img class="about-me__photo" src="img/photo.jpg" alt="">
-            <p class="about-me__text">
-                >Привет! <br>
-                > Меня зовут Николай. <br>
-                > Я верстальщик, и начинающий фронтенд-разработчик. <br>
-                > Это мой блог, где я буду делиться своими мыслями относительно веб-разработки <br>
-            </p>
+            <img class="about-me__photo" src="img/photo.jpg" alt="моё фото">
+               <span class="about-me__container"> Привет!</span>
+               <span class="about-me__container"> Меня зовут Николай.</span>
+               <span class="about-me__container"> Я верстальщик, и начинающий фронтенд-разработчик.</span>
+               <span class="about-me__container"> Это мой блог, где я буду делиться своими мыслями относительно веб-разработки</span>
         </section>
         <section class="posts">
             <h2 class="posts__title">
                 _новые посты
             </h2>
             <ul class="posts__list">
-                <li class="posts__item">
-                    <h3 class="posts__subtitle">
+                <li class="post">
+                    <h3 class="post__title">
                         Начинаю изучать Javascript
                     </h3>
                     <span class="posts__date">
                         11/09/2021
                     </span>
-                    <img class="posts__img" src="img/JS.jpg" alt="">
+                    <img class="posts__img" src="img/JS.jpg" alt="Javascript">
                     <p class="posts__text">
                         Задача организации, в особенности же консультация с широким активом позволяет выполнять важные
                         задания по разработке форм развития. Повседневная практика показывает, что новая модель
@@ -95,8 +98,8 @@
                         участия.
                     </p>
                 </li>
-                <li class="posts__item">
-                    <h3 class="posts__subtitle">
+                <li class="post">
+                    <h3 class="post__title">
                         Время практики
                     </h3>
                     <span class="posts__date">
@@ -110,8 +113,8 @@
                         участия.
                     </p>
                 </li>
-                <li>
-                    <h3 class="posts__subtitle">
+                <li class="post">
+                    <h3 class="post__title">
                         Лето заканчивается
                     </h3>
                     <span class="posts__date">
@@ -126,9 +129,9 @@
                     </p>
                 </li>
             </ul>
-            <button class="posts__btn">
+            <a class="posts__link" href="#">
                 смотреть остальные...
-            </button>
+            </a>
         </section>
     </main>
     <footer class="footer">
